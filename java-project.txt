@@ -1,0 +1,14 @@
+Project: customizable rss news aggregator 
+
+Story: I read a lot of news throughout the day and spend a lot of time reading online.  I will be developing a web app that allows me to aggregate rss feeds from various sources and filtered by interest. 
+
+Problem: Filter news based on the user's interests.
+
+
+
+Project Plan:
+
+Wk 1 - Create login
+Wk 2 - Create user account
+Wk 3 - Add customization functionality
+Wk 4 - Develop style, enhance UX

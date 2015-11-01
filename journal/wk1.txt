@@ -1,0 +1,4 @@
+Journal Wk 1
+
+
+User login code has been developed but not yet integrated into this project.

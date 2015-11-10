@@ -1,0 +1,7 @@
+The code is still a bit messy.  
+
+So far what I have oprational is: login by db, logout, choose the feeds you want displayed, and page to read your feeds. 
+
+Next, I'll be adding the functionality for a user to add a new feed... Beyond what is already listed. 
+
+I will also adding an admin user role that can authorize global accessibility of the user added feeds.  Users will be able to add a feed to their own account, but once authorized by the admin, it will be visible to all users.

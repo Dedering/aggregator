@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2c9893-8cbc-4663-b6ec-436f8f0a695a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/aggregator/FEEDS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/aggregator/MYSQL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/aggregator/UPDATEUSER.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/mysql.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/WEB-INF/classes/aggregator/MYSQL.class" afterPath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/WEB-INF/classes/aggregator/MYSQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/aggregator/aggregator/MYSQL.class" afterPath="$PROJECT_DIR$/out/production/aggregator/aggregator/MYSQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/edit-feed.jsp" afterPath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/edit-feed.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/edit-feed.jsp" afterPath="$PROJECT_DIR$/web/edit-feed.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/feed.jsp" afterPath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/feed.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/feed.jsp" afterPath="$PROJECT_DIR$/web/feed.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aggregator/MYSQL.java" afterPath="$PROJECT_DIR$/src/aggregator/MYSQL.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aggregator.iws" />
@@ -58,56 +47,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MYSQL.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MYSQL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/aggregator/MYSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4814816">
-              <caret line="133" column="11" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.16666667">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#18125#18133#0" expanded="true" />
-                <marker date="1447040800000" expanded="true" signature="776:811" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="3422:3575" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="3467:3574" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447040800000" expanded="true" signature="3516:3558" placeholder="Select user_..users..." />
-                <marker date="1447040800000" expanded="true" signature="3956:4112" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="4004:4111" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447040800000" expanded="true" signature="4053:4095" placeholder="Select user_..users..." />
-                <marker date="1447040800000" expanded="true" signature="6367:6518" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="6410:6517" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447040800000" expanded="true" signature="6459:6501" placeholder="Select user_..users..." />
-                <marker date="1447040800000" expanded="true" signature="8779:8820" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="8779:8821" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="8779:8822" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="11036:11192" placeholder="Select feed_..feed_url..." />
-                <marker date="1447040800000" expanded="true" signature="11084:11191" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447040800000" expanded="true" signature="11133:11175" placeholder="Select user_..users..." />
-                <marker date="1447040800000" expanded="true" signature="13317:13357" placeholder="DELETE FROM ..." />
-                <marker date="1447040800000" expanded="true" signature="13391:13427" placeholder="DELETE FROM ..." />
-                <marker date="1447040800000" expanded="true" signature="13391:13428" placeholder="DELETE FROM ..." />
-                <marker date="1447040800000" expanded="true" signature="13391:13430" placeholder="DELETE FROM ..." />
-                <marker date="1447040800000" expanded="true" signature="13391:13431" placeholder="DELETE FROM ..." />
-                <marker date="1447040800000" expanded="true" signature="13512:13560" placeholder="insert into ..." />
-                <marker date="1447040800000" expanded="true" signature="13512:13576" placeholder="insert into ..." />
-                <marker date="1447040800000" expanded="true" signature="13512:13592" placeholder="insert into ..." />
-                <marker date="1447040800000" expanded="true" signature="13673:13737" placeholder="Update user_..." />
-                <marker date="1447040800000" expanded="true" signature="13754:13755" placeholder="Update user_..." />
-                <marker date="1447040800000" expanded="true" signature="15947:15985" placeholder="DELETE FROM ..." />
-                <marker date="1447040800000" expanded="true" signature="15947:15986" placeholder="DELETE FROM ..." />
-                <marker date="1447040800000" expanded="true" signature="16087:16167" placeholder="insert into ..." />
-                <marker date="1447040800000" expanded="true" signature="18605:18758" placeholder="Select feed_..feed..." />
-                <marker date="1447040800000" expanded="true" signature="18650:18757" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447040800000" expanded="true" signature="18699:18741" placeholder="Select user_..users..." />
-                <marker date="1447040800000" expanded="true" signature="20967:20994" placeholder="SELECT user_..users..." />
+                <element signature="e#18132#18140#0" expanded="true" />
+                <marker date="1447115117000" expanded="true" signature="783:818" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="3429:3582" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="3474:3581" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447115117000" expanded="true" signature="3523:3565" placeholder="Select user_..users..." />
+                <marker date="1447115117000" expanded="true" signature="3963:4119" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="4011:4118" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447115117000" expanded="true" signature="4060:4102" placeholder="Select user_..users..." />
+                <marker date="1447115117000" expanded="true" signature="6374:6525" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="6417:6524" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447115117000" expanded="true" signature="6466:6508" placeholder="Select user_..users..." />
+                <marker date="1447115117000" expanded="true" signature="8786:8827" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="8786:8828" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="8786:8829" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="11043:11199" placeholder="Select feed_..feed_url..." />
+                <marker date="1447115117000" expanded="true" signature="11091:11198" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447115117000" expanded="true" signature="11140:11182" placeholder="Select user_..users..." />
+                <marker date="1447115117000" expanded="true" signature="13324:13364" placeholder="DELETE FROM ..." />
+                <marker date="1447115117000" expanded="true" signature="13398:13434" placeholder="DELETE FROM ..." />
+                <marker date="1447115117000" expanded="true" signature="13398:13435" placeholder="DELETE FROM ..." />
+                <marker date="1447115117000" expanded="true" signature="13398:13437" placeholder="DELETE FROM ..." />
+                <marker date="1447115117000" expanded="true" signature="13398:13438" placeholder="DELETE FROM ..." />
+                <marker date="1447115117000" expanded="true" signature="13519:13567" placeholder="insert into ..." />
+                <marker date="1447115117000" expanded="true" signature="13519:13583" placeholder="insert into ..." />
+                <marker date="1447115117000" expanded="true" signature="13519:13599" placeholder="insert into ..." />
+                <marker date="1447115117000" expanded="true" signature="13680:13744" placeholder="Update user_..." />
+                <marker date="1447115117000" expanded="true" signature="13761:13762" placeholder="Update user_..." />
+                <marker date="1447115117000" expanded="true" signature="15954:15992" placeholder="DELETE FROM ..." />
+                <marker date="1447115117000" expanded="true" signature="15954:15993" placeholder="DELETE FROM ..." />
+                <marker date="1447115117000" expanded="true" signature="16094:16174" placeholder="insert into ..." />
+                <marker date="1447115117000" expanded="true" signature="18612:18765" placeholder="Select feed_..feed..." />
+                <marker date="1447115117000" expanded="true" signature="18657:18764" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447115117000" expanded="true" signature="18706:18748" placeholder="Select user_..users..." />
+                <marker date="1447115117000" expanded="true" signature="20974:21001" placeholder="SELECT user_..users..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FEEDS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FEEDS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aggregator/FEEDS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61340207">
+            <state vertical-scroll-proportion="-9.074074">
               <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -198,8 +187,8 @@
         <option value="$PROJECT_DIR$/web/edit-feed.jsp" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/feed.jsp" />
-        <option value="$PROJECT_DIR$/src/aggregator/MYSQL.java" />
         <option value="$PROJECT_DIR$/src/aggregator/FEEDS.java" />
+        <option value="$PROJECT_DIR$/src/aggregator/MYSQL.java" />
       </list>
     </option>
   </component>
@@ -228,8 +217,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-60" />
-    <option name="y" value="185" />
+    <option name="x" value="100" />
+    <option name="y" value="93" />
     <option name="width" value="1430" />
     <option name="height" value="782" />
   </component>
@@ -820,15 +809,15 @@
       <updated>1446413909173</updated>
       <workItem from="1446413913662" duration="23708000" />
       <workItem from="1446515397376" duration="1151000" />
-      <workItem from="1446920954775" duration="33598000" />
+      <workItem from="1446920954775" duration="33853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58457000" />
+    <option name="totallyTimeSpent" value="58712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-60" y="185" width="1430" height="782" extended-state="0" />
+    <frame x="100" y="93" width="1430" height="782" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -851,7 +840,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16066283" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3335735" sideWeight="0.49159664" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.357971" sideWeight="0.49055055" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.357971" sideWeight="0.49055055" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -926,40 +915,40 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#18125#18133#0" expanded="true" />
-            <marker date="1447040800000" expanded="true" signature="776:811" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="3422:3575" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="3467:3574" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="3516:3558" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="3956:4112" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="4004:4111" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="4053:4095" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="6367:6518" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="6410:6517" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="6459:6501" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="8779:8820" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="8779:8821" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="8779:8822" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="11036:11192" placeholder="Select feed_..feed_url..." />
-            <marker date="1447040800000" expanded="true" signature="11084:11191" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="11133:11175" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="13317:13357" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13427" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13428" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13430" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13431" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13512:13560" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="13512:13576" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="13512:13592" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="13673:13737" placeholder="Update user_..." />
-            <marker date="1447040800000" expanded="true" signature="13754:13755" placeholder="Update user_..." />
-            <marker date="1447040800000" expanded="true" signature="15947:15985" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="15947:15986" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="16087:16167" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="18605:18758" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="18650:18757" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="18699:18741" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="20967:20994" placeholder="SELECT user_..users..." />
+            <element signature="e#18132#18140#0" expanded="true" />
+            <marker date="1447115117000" expanded="true" signature="783:818" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="3429:3582" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="3474:3581" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="3523:3565" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="3963:4119" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="4011:4118" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="4060:4102" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="6374:6525" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="6417:6524" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="6466:6508" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="8786:8827" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="8786:8828" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="8786:8829" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="11043:11199" placeholder="Select feed_..feed_url..." />
+            <marker date="1447115117000" expanded="true" signature="11091:11198" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="11140:11182" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="13324:13364" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13434" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13435" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13437" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13438" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13519:13567" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="13519:13583" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="13519:13599" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="13680:13744" placeholder="Update user_..." />
+            <marker date="1447115117000" expanded="true" signature="13761:13762" placeholder="Update user_..." />
+            <marker date="1447115117000" expanded="true" signature="15954:15992" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="15954:15993" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="16094:16174" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="18612:18765" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="18657:18764" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="18706:18748" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="20974:21001" placeholder="SELECT user_..users..." />
           </folding>
         </state>
       </provider>
@@ -1249,56 +1238,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aggregator/MYSQL.java">
+    <entry file="file://$PROJECT_DIR$/src/aggregator/FEEDS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4814816">
-          <caret line="133" column="11" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
+        <state vertical-scroll-proportion="-9.074074">
+          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#18125#18133#0" expanded="true" />
-            <marker date="1447040800000" expanded="true" signature="776:811" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="3422:3575" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="3467:3574" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="3516:3558" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="3956:4112" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="4004:4111" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="4053:4095" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="6367:6518" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="6410:6517" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="6459:6501" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="8779:8820" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="8779:8821" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="8779:8822" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="11036:11192" placeholder="Select feed_..feed_url..." />
-            <marker date="1447040800000" expanded="true" signature="11084:11191" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="11133:11175" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="13317:13357" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13427" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13428" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13430" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13391:13431" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="13512:13560" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="13512:13576" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="13512:13592" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="13673:13737" placeholder="Update user_..." />
-            <marker date="1447040800000" expanded="true" signature="13754:13755" placeholder="Update user_..." />
-            <marker date="1447040800000" expanded="true" signature="15947:15985" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="15947:15986" placeholder="DELETE FROM ..." />
-            <marker date="1447040800000" expanded="true" signature="16087:16167" placeholder="insert into ..." />
-            <marker date="1447040800000" expanded="true" signature="18605:18758" placeholder="Select feed_..feed..." />
-            <marker date="1447040800000" expanded="true" signature="18650:18757" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447040800000" expanded="true" signature="18699:18741" placeholder="Select user_..users..." />
-            <marker date="1447040800000" expanded="true" signature="20967:20994" placeholder="SELECT user_..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aggregator/FEEDS.java">
+    <entry file="file://$PROJECT_DIR$/src/aggregator/MYSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61340207">
-          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.16666667">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#18132#18140#0" expanded="true" />
+            <marker date="1447115117000" expanded="true" signature="783:818" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="3429:3582" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="3474:3581" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="3523:3565" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="3963:4119" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="4011:4118" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="4060:4102" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="6374:6525" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="6417:6524" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="6466:6508" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="8786:8827" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="8786:8828" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="8786:8829" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="11043:11199" placeholder="Select feed_..feed_url..." />
+            <marker date="1447115117000" expanded="true" signature="11091:11198" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="11140:11182" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="13324:13364" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13434" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13435" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13437" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13398:13438" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="13519:13567" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="13519:13583" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="13519:13599" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="13680:13744" placeholder="Update user_..." />
+            <marker date="1447115117000" expanded="true" signature="13761:13762" placeholder="Update user_..." />
+            <marker date="1447115117000" expanded="true" signature="15954:15992" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="15954:15993" placeholder="DELETE FROM ..." />
+            <marker date="1447115117000" expanded="true" signature="16094:16174" placeholder="insert into ..." />
+            <marker date="1447115117000" expanded="true" signature="18612:18765" placeholder="Select feed_..feed..." />
+            <marker date="1447115117000" expanded="true" signature="18657:18764" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447115117000" expanded="true" signature="18706:18748" placeholder="Select user_..users..." />
+            <marker date="1447115117000" expanded="true" signature="20974:21001" placeholder="SELECT user_..users..." />
           </folding>
         </state>
       </provider>

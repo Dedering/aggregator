@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  *
- *@author     Eric Knapp
+ *@author     Jonathan Dedering
  *
  */
 public class MYSQL {

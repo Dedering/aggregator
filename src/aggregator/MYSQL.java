@@ -1,8 +1,7 @@
 package aggregator;
 
-import java.io.*;
 import java.sql.*;
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  *
@@ -93,9 +92,15 @@ public class MYSQL {
 
 
 
+
+
+
+
+
     // return feeds by id
     public String returnUserFeeds(int user_id){
         String feeds = "";
+       // ArrayList<String> feedlist = null;
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
@@ -120,7 +125,114 @@ public class MYSQL {
                 String feed_name = resultSet.getString("feed_name");
 
                 feeds += "<br />" + feed_name;
+            }
 
+
+
+
+
+// remove??
+             queryString = "Select feed_url from feed_url Where feed_id IN (Select feed_id From user_feeds Where user_id IN (Select user_id From users Where user_id = " + user_id + "));";
+
+            System.out.println("queryString: " + queryString);
+
+            resultSet = statement.executeQuery(queryString);
+
+            System.out.println();
+
+            while (resultSet.next()) {
+                String feed_url = resultSet.getString("feed_url");
+             //   feeds += "<br />" + feed_url;
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+        } catch (ClassNotFoundException classNotFound) {
+            System.err.println("Cannot find database driver ");
+            classNotFound.printStackTrace();
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connection.ecting to database "
+                    + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+
+                if (statement != null) {
+                    statement.close();
+                }
+
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connection.ecting to database "
+                        + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+        return feeds;
+
+    }
+
+
+
+
+/*
+*
+*
+*   Feed id By user ID
+*
+*
+ */
+
+
+    // return feeds id  by id
+    public String returnUserFeedIDs(int user_id){
+        String feeds = "";
+        // ArrayList<String> feedlist = null;
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3307/sample", "root", "");
+
+            statement = connection.createStatement();
+//            String queryString = "SELECT user_name, user_id FROM users ";
+            String queryString = "Select feed_id from feed Where feed_id IN (Select feed_id From user_feeds Where user_id IN (Select user_id From users Where user_id = " + user_id + "));";
+
+            System.out.println("queryString: " + queryString);
+
+            resultSet = statement.executeQuery(queryString);
+
+            System.out.println();
+
+            while (resultSet.next()) {
+                String feed_id = resultSet.getString("feed_id");
+
+                feeds += feed_id + ", ";
             }
 
         } catch (ClassNotFoundException classNotFound) {
@@ -158,6 +270,178 @@ public class MYSQL {
         return feeds;
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*
+*
+*  return feed name  by  feed_id
+*
+*
+ */
+
+
+    // return feed name  by  feedid
+    public String returnFeedNameByID(int feed_id){
+        String feeds = "";
+        // ArrayList<String> feedlist = null;
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3307/sample", "root", "");
+
+            statement = connection.createStatement();
+//            String queryString = "SELECT user_name, user_id FROM users ";
+            String queryString = "Select feed_name from feed Where feed_id = " + feed_id + ";";
+
+            System.out.println("queryString: " + queryString);
+
+            resultSet = statement.executeQuery(queryString);
+
+            System.out.println();
+
+            while (resultSet.next()) {
+                String feed_name = resultSet.getString("feed_name");
+
+                feeds += feed_name;
+            }
+
+        } catch (ClassNotFoundException classNotFound) {
+            System.err.println("Cannot find database driver ");
+            classNotFound.printStackTrace();
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connection.ecting to database "
+                    + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+
+                if (statement != null) {
+                    statement.close();
+                }
+
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connection.ecting to database "
+                        + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+        return feeds;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // return feeds by id
+    public String returnUserFeedUrls(int user_id){
+        String feeds = "";
+        ArrayList<String> feedlist = null;
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3307/sample", "root", "");
+
+            statement = connection.createStatement();
+//            String queryString = "SELECT user_name, user_id FROM users ";
+            String  queryString = "Select feed_url from feed_url Where feed_id IN (Select feed_id From user_feeds Where user_id IN (Select user_id From users Where user_id = " + user_id + "));";
+
+            System.out.println("queryString: " + queryString);
+
+            resultSet = statement.executeQuery(queryString);
+
+            System.out.println();
+
+            while (resultSet.next()) {
+                String feed_url = resultSet.getString("feed_url");
+                //feedlist.add(feed_url);
+                feeds += feed_url + "<split>";
+
+            }
+
+
+
+        } catch (ClassNotFoundException classNotFound) {
+            System.err.println("Cannot find database driver ");
+            classNotFound.printStackTrace();
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connection.ecting to database "
+                    + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+
+                if (statement != null) {
+                    statement.close();
+                }
+
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connection.ecting to database "
+                        + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+        return feeds;
+
+    }
+
+
+
 
 
 
@@ -174,7 +458,7 @@ public class MYSQL {
 
 
     // update user feeds
-    public String updateUserFeeds(int user_id,int feed_id){
+    public String updateUserFeeds(int user_id, int feed_id){
         String feeds = "";
         Connection connection = null;
         Statement statement = null;
@@ -187,22 +471,30 @@ public class MYSQL {
                     "jdbc:mysql://localhost:3307/sample", "root", "");
 
             statement = connection.createStatement();
-//            String queryString = "SELECT user_name, user_id FROM users ";
-            String queryString = "Select feed_name from feed Where feed_id IN (Select feed_id From user_feeds Where user_id IN (Select user_id From users Where user_id = " + user_id + "));";
+           // DELETE FROM user_feeds WHERE user_id = 2;
 
-            System.out.println("queryString: " + queryString);
+       //     String delete = "DELETE FROM user_feeds WHERE user_id = 2;";
+       //     statement.executeUpdate(delete);
 
-            resultSet = statement.executeQuery(queryString);
+            String insert = "insert into user_feeds (user_id,feed_id) VALUES(" + user_id + "," + feed_id + ");";
+            statement.executeUpdate(insert);
 
-            System.out.println();
+         //   String update = "Update user_feeds set feed_id = " + feed_id + " Where user_id = " + user_id + ";";
+         //   statement.executeUpdate(update);
 
-            while (resultSet.next()) {
+           // System.out.println("queryString: " + queryString);
+
+           // resultSet = statement.executeQuery(queryString);
+
+           // System.out.println();
+
+         /*   while (resultSet.next()) {
                 String feed_name = resultSet.getString("feed_name");
 
                 feeds += "<br />" + feed_name;
 
             }
-
+*/
         } catch (ClassNotFoundException classNotFound) {
             System.err.println("Cannot find database driver ");
             classNotFound.printStackTrace();
@@ -240,6 +532,84 @@ public class MYSQL {
     }
 
 
+
+
+
+
+
+    // update user feeds
+    public String deleteUserFeeds(int user_id){
+        String feeds = "";
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3307/sample", "root", "");
+
+            statement = connection.createStatement();
+            // DELETE FROM user_feeds WHERE user_id = 2;
+
+                 String delete = "DELETE FROM user_feeds WHERE user_id = " + user_id + ";";
+                 statement.executeUpdate(delete);
+
+            //String insert = "insert into user_feeds (user_id,feed_id) VALUES(" + user_id + "," + feed_id + ");";
+            //statement.executeUpdate(insert);
+
+            //   String update = "Update user_feeds set feed_id = " + feed_id + " Where user_id = " + user_id + ";";
+            //   statement.executeUpdate(update);
+
+            // System.out.println("queryString: " + queryString);
+
+            // resultSet = statement.executeQuery(queryString);
+
+            // System.out.println();
+
+         /*   while (resultSet.next()) {
+                String feed_name = resultSet.getString("feed_name");
+
+                feeds += "<br />" + feed_name;
+
+            }
+*/
+        } catch (ClassNotFoundException classNotFound) {
+            System.err.println("Cannot find database driver ");
+            classNotFound.printStackTrace();
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connection.ecting to database "
+                    + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+
+                if (statement != null) {
+                    statement.close();
+                }
+
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connection.ecting to database "
+                        + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+        return feeds;
+
+    }
 
 
 

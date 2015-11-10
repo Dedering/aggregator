@@ -14,6 +14,7 @@
   <%@ include file="/file-que.jsp" %>
   <title>My Feed</title>
 </head>
+<body>
 <%@ include file="/user-nav.jsp" %>
 
 
@@ -23,6 +24,12 @@
 <% //Pass user id to MySQL class
   aggregator.MYSQL tc = new aggregator.MYSQL();
   out.print(tc.returnUserFeeds(2));
+
+  aggregator.FEEDS fd = new aggregator.FEEDS();
+  out.println(fd.getFeed("http://hosted2.ap.org/atom/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305"));
+  //aggregator.FEEDS fd = new aggregator.FEEDS();
+
+ // out.print(fd.returnUserFeeds("http://hosted2.ap.org/atom/APDEFAULT/3d281c11a96b4ad082fe88aa0db04305"));
 %>
 
 

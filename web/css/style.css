@@ -46,3 +46,8 @@ nav table td:nth-child(2), nav table td:nth-child(3), nav table td:nth-child(4) 
     text-align: center;
     max-width: 160px;
 }
+.feed {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}

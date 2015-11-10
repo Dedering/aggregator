@@ -18,7 +18,9 @@
     <table name="users" schema="" catalog="SAMPLE" type="TABLE">
       <column name="user_name" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
       <column name="user_pass" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <primary-key name="PRIMARY" columns="user_name"/>
+      <index name="user_id" unique="true" columns="user_id"/>
     </table>
   </data-source>
 </component>

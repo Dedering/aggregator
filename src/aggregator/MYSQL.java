@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class MYSQL {
 
-
+// set hibernate /// hibernate sets/// how to join tables with hibernate
     // return feed checkboxes
 
     public String returnFeedCheckboxes(int user_id){

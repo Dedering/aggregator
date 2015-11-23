@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb2c9893-8cbc-4663-b6ec-436f8f0a695a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_4_2_2_4_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/jQuery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/site.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/WEB-INF/classes/aggregator/MYSQL.class" afterPath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/WEB-INF/classes/aggregator/MYSQL.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/aggregator/aggregator/MYSQL.class" afterPath="$PROJECT_DIR$/out/production/aggregator/aggregator/MYSQL.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aggregator/MYSQL.java" afterPath="$PROJECT_DIR$/src/aggregator/MYSQL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aggregator.iml" afterPath="$PROJECT_DIR$/aggregator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/aggregator_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/aggregator_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/edit-feed.jsp" afterPath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/edit-feed.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/edit-feed.jsp" afterPath="$PROJECT_DIR$/web/edit-feed.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/file-que.jsp" afterPath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/file-que.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/file-que.jsp" afterPath="$PROJECT_DIR$/web/file-que.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/aggregator_war_exploded/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aggregator.iws" />
@@ -46,56 +60,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MYSQL.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MYSQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aggregator/MYSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8150687">
-              <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+            <state vertical-scroll-proportion="-300.55554">
+              <caret line="541" column="34" selection-start-line="541" selection-start-column="18" selection-end-line="541" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1447116101000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447116101000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
-                <marker date="1447116101000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447116101000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
-                <marker date="1447116101000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447116101000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
-                <marker date="1447116101000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
-                <marker date="1447116101000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447116101000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
-                <marker date="1447116101000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
-                <marker date="1447116101000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
-                <marker date="1447116101000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
-                <marker date="1447116101000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
-                <marker date="1447116101000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
-                <marker date="1447116101000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
-                <marker date="1447116101000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
-                <marker date="1447116101000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
-                <marker date="1447116101000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
-                <marker date="1447116101000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
-                <marker date="1447116101000" expanded="true" signature="16026:16064" placeholder="DELETE FROM ..." />
-                <marker date="1447116101000" expanded="true" signature="16026:16065" placeholder="DELETE FROM ..." />
-                <marker date="1447116101000" expanded="true" signature="16166:16246" placeholder="insert into ..." />
-                <marker date="1447116101000" expanded="true" signature="18684:18837" placeholder="Select feed_..feed..." />
-                <marker date="1447116101000" expanded="true" signature="18729:18836" placeholder="Select feed_..user_feeds..." />
-                <marker date="1447116101000" expanded="true" signature="18778:18820" placeholder="Select user_..users..." />
-                <marker date="1447116101000" expanded="true" signature="21046:21073" placeholder="SELECT user_..users..." />
+                <marker date="1447894945000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447894945000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
+                <marker date="1447894945000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447894945000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
+                <marker date="1447894945000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447894945000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
+                <marker date="1447894945000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
+                <marker date="1447894945000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447894945000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
+                <marker date="1447894945000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
+                <marker date="1447894945000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
+                <marker date="1447894945000" expanded="true" signature="15974:16033" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="17839:17897" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="17845:17875" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="17845:17892" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="17845:17893" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="17845:17897" placeholder="INSERT into ..." />
+                <marker date="1447894945000" expanded="true" signature="19755:19793" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="19755:19794" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="19895:19975" placeholder="insert into ..." />
+                <marker date="1447894945000" expanded="true" signature="22335:22374" placeholder="DELETE FROM ..." />
+                <marker date="1447894945000" expanded="true" signature="24983:25136" placeholder="Select feed_..feed..." />
+                <marker date="1447894945000" expanded="true" signature="25028:25135" placeholder="Select feed_..user_feeds..." />
+                <marker date="1447894945000" expanded="true" signature="25077:25119" placeholder="Select user_..users..." />
+                <marker date="1447894945000" expanded="true" signature="27345:27372" placeholder="SELECT user_..users..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FEEDS.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FEEDS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/aggregator/FEEDS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.11398176">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,8 +127,38 @@
       <file leaf-file-name="edit-feed.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/edit-feed.jsp">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-60.166668">
+              <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file-que.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/file-que.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/site.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="55" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="55" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/bootstrap/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6779" column="22" selection-start-line="6779" selection-start-column="22" selection-end-line="6779" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -117,28 +168,24 @@
         <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UPDATEUSER.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/aggregator/UPDATEUSER.java">
+      <file leaf-file-name="jQuery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/jQuery.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feed.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/feed.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="95" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
-              <folding />
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1447912856000" expanded="true" signature="348:32124" placeholder="{...}" />
+                <marker date="1447912856000" expanded="true" signature="32041:32124" placeholder="{...}" />
+                <marker date="1447912856000" expanded="true" signature="64141:64181" placeholder="{...}" />
+                <marker date="1447912856000" expanded="true" signature="64141:95962" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,6 +198,8 @@
         <option value="Jsp File" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -168,7 +217,6 @@
         <option value="$PROJECT_DIR$/web/css/site.css" />
         <option value="$PROJECT_DIR$/web/login-box.jsp" />
         <option value="$PROJECT_DIR$/web/header.jsp" />
-        <option value="$PROJECT_DIR$/web/file-que.jsp" />
         <option value="$PROJECT_DIR$/web/failedLogin.jsp" />
         <option value="$PROJECT_DIR$/src/mysql.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
@@ -182,11 +230,18 @@
         <option value="$PROJECT_DIR$/src/javax/WebServlet.java" />
         <option value="$PROJECT_DIR$/src/javax/ServletException.java" />
         <option value="$PROJECT_DIR$/src/UPDATEUSER.java" />
-        <option value="$PROJECT_DIR$/web/edit-feed.jsp" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/feed.jsp" />
-        <option value="$PROJECT_DIR$/src/aggregator/FEEDS.java" />
         <option value="$PROJECT_DIR$/src/aggregator/MYSQL.java" />
+        <option value="$PROJECT_DIR$/web/assets/jquery.js" />
+        <option value="$PROJECT_DIR$/web/assets/bootstrap/bootstrap2.css" />
+        <option value="$PROJECT_DIR$/web/assets/bootstrap/bootstrap.js" />
+        <option value="$PROJECT_DIR$/web/js/site2.js" />
+        <option value="$PROJECT_DIR$/web/file-que.jsp" />
+        <option value="$PROJECT_DIR$/web/js/site.js" />
+        <option value="$PROJECT_DIR$/web/assets/jQuery.js" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/edit-feed.jsp" />
+        <option value="$PROJECT_DIR$/src/aggregator/FEEDS.java" />
       </list>
     </option>
   </component>
@@ -215,9 +270,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-24" />
-    <option name="y" value="26" />
-    <option name="width" value="1431" />
+    <option name="x" value="28" />
+    <option name="y" value="61" />
+    <option name="width" value="1247" />
     <option name="height" value="848" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -295,7 +350,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,7 +368,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,21 +431,25 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Group/WebSiteScaffolding" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EAlbeeProject" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="dynamic.classpath" value="false" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets/bootstrap" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="javax" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.index.jsp (4)">
+  <component name="RunManager" selected="JavaScript Debug.index.jsp">
     <configuration default="false" name="index.jsp (4)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.0.261" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
       <deployment>
@@ -402,45 +461,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="index_jsp_(4)_aggregator_18" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="aggregator:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.0.261" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
-      <deployment>
-        <artifact name="aggregator:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_aggregator_19" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -500,6 +520,9 @@
       <method />
     </configuration>
     <configuration default="false" name="feed.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/feed.jsp">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/index.jsp">
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -780,18 +803,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.JdbcTest1" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (4)" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-      <item index="3" class="java.lang.String" itemvalue="Application.URLReader" />
-      <item index="4" class="java.lang.String" itemvalue="Application.FEEDS" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.feed.jsp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.URLReader" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FEEDS" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.feed.jsp" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.jsp" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (4)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.feed.jsp" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FEEDS" />
-        <item index="3" class="java.lang.String" itemvalue="Application.URLReader" />
-        <item index="4" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.jsp" />
+        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (4)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.feed.jsp" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FEEDS" />
+        <item index="4" class="java.lang.String" itemvalue="Application.URLReader" />
       </list>
     </recent_temporary>
   </component>
@@ -808,45 +831,46 @@
       <workItem from="1446413913662" duration="23708000" />
       <workItem from="1446515397376" duration="1151000" />
       <workItem from="1446920954775" duration="36197000" />
-      <workItem from="1447634198061" duration="194000" />
+      <workItem from="1447634198061" duration="15952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61250000" />
+    <option name="totallyTimeSpent" value="77008000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-24" y="26" width="1431" height="848" extended-state="0" />
+    <frame x="28" y="61" width="1247" height="848" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1462536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34788734" sideWeight="0.5094495" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38044372" sideWeight="0.50840336" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804233" sideWeight="0.4806902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38044372" sideWeight="0.50840336" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09791217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11286307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33333334" sideWeight="0.49159664" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.49055055" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22157677" sideWeight="0.49159664" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994709" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09259259" sideWeight="0.49055055" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.4806902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -891,7 +915,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -906,39 +930,46 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447116101000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
-            <marker date="1447116101000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
-            <marker date="1447116101000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
-            <marker date="1447116101000" expanded="true" signature="16026:16064" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="16026:16065" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="16166:16246" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="18684:18837" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="18729:18836" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="18778:18820" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="21046:21073" placeholder="SELECT user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
+            <marker date="1447894945000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
+            <marker date="1447894945000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
+            <marker date="1447894945000" expanded="true" signature="15974:16033" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17839:17897" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17875" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17892" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17893" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17897" placeholder="INSERT into ..." />
+            <marker date="1447894945000" expanded="true" signature="19755:19793" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="19755:19794" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="19895:19975" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="22335:22374" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="24983:25136" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="25028:25135" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="25077:25119" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="27345:27372" placeholder="SELECT user_..users..." />
           </folding>
         </state>
       </provider>
@@ -947,9 +978,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -989,6 +1018,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -998,39 +1028,46 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447116101000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
-            <marker date="1447116101000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
-            <marker date="1447116101000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
-            <marker date="1447116101000" expanded="true" signature="16026:16064" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="16026:16065" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="16166:16246" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="18684:18837" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="18729:18836" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="18778:18820" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="21046:21073" placeholder="SELECT user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
+            <marker date="1447894945000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
+            <marker date="1447894945000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
+            <marker date="1447894945000" expanded="true" signature="15974:16033" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17839:17897" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17875" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17892" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17893" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17897" placeholder="INSERT into ..." />
+            <marker date="1447894945000" expanded="true" signature="19755:19793" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="19755:19794" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="19895:19975" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="22335:22374" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="24983:25136" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="25028:25135" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="25077:25119" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="27345:27372" placeholder="SELECT user_..users..." />
           </folding>
         </state>
       </provider>
@@ -1062,6 +1099,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,6 +1131,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,6 +1139,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,6 +1170,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,6 +1202,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,14 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/file-que.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,13 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/failedLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.7058825">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1209,6 +1236,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,6 +1244,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,13 +1279,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25547445">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34306568">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,22 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
           <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aggregator/UPDATEUSER.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1292,71 +1299,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/edit-feed.jsp">
+    <entry file="file://$PROJECT_DIR$/web/failedLogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="55" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="55" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/feed.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-16.875">
           <caret line="28" column="95" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/aggregator/FEEDS.java">
+    <entry file="file://$PROJECT_DIR$/src/aggregator/UPDATEUSER.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.916667">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/bootstrap/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6779" column="22" selection-start-line="6779" selection-start-column="22" selection-end-line="6779" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1447912856000" expanded="true" signature="348:32124" placeholder="{...}" />
+            <marker date="1447912856000" expanded="true" signature="32041:32124" placeholder="{...}" />
+            <marker date="1447912856000" expanded="true" signature="64141:64181" placeholder="{...}" />
+            <marker date="1447912856000" expanded="true" signature="64141:95962" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/file-que.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/edit-feed.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-60.166668">
+          <caret line="146" column="35" selection-start-line="146" selection-start-column="35" selection-end-line="146" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InstructorFeedback.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aggregator/MYSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8150687">
-          <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+        <state vertical-scroll-proportion="-300.55554">
+          <caret line="541" column="34" selection-start-line="541" selection-start-column="18" selection-end-line="541" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1447116101000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
-            <marker date="1447116101000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
-            <marker date="1447116101000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
-            <marker date="1447116101000" expanded="true" signature="16026:16064" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="16026:16065" placeholder="DELETE FROM ..." />
-            <marker date="1447116101000" expanded="true" signature="16166:16246" placeholder="insert into ..." />
-            <marker date="1447116101000" expanded="true" signature="18684:18837" placeholder="Select feed_..feed..." />
-            <marker date="1447116101000" expanded="true" signature="18729:18836" placeholder="Select feed_..user_feeds..." />
-            <marker date="1447116101000" expanded="true" signature="18778:18820" placeholder="Select user_..users..." />
-            <marker date="1447116101000" expanded="true" signature="21046:21073" placeholder="SELECT user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="855:890" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="3501:3654" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="3546:3653" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="3595:3637" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="4035:4191" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="4083:4190" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="4132:4174" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="6446:6597" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="6489:6596" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="6538:6580" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8899" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8900" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="8858:8901" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="11115:11271" placeholder="Select feed_..feed_url..." />
+            <marker date="1447894945000" expanded="true" signature="11163:11270" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="11212:11254" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="13396:13436" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13506" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13507" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13509" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13470:13510" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13639" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13655" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13591:13671" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="13752:13816" placeholder="Update user_..." />
+            <marker date="1447894945000" expanded="true" signature="13833:13834" placeholder="Update user_..." />
+            <marker date="1447894945000" expanded="true" signature="15974:16033" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17839:17897" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17875" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17892" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17893" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="17845:17897" placeholder="INSERT into ..." />
+            <marker date="1447894945000" expanded="true" signature="19755:19793" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="19755:19794" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="19895:19975" placeholder="insert into ..." />
+            <marker date="1447894945000" expanded="true" signature="22335:22374" placeholder="DELETE FROM ..." />
+            <marker date="1447894945000" expanded="true" signature="24983:25136" placeholder="Select feed_..feed..." />
+            <marker date="1447894945000" expanded="true" signature="25028:25135" placeholder="Select feed_..user_feeds..." />
+            <marker date="1447894945000" expanded="true" signature="25077:25119" placeholder="Select user_..users..." />
+            <marker date="1447894945000" expanded="true" signature="27345:27372" placeholder="SELECT user_..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aggregator/FEEDS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11398176">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1415,12 +1507,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>aggregator</last-edited>
+          <last-edited>Hibernate|aggregator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1428,7 +1519,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>RSS_Atom_feed_reader_131</last-edited>
+          <last-edited>Hibernate 4.2.2-4.2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

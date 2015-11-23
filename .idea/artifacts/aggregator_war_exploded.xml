@@ -7,6 +7,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="aggregator" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+        </element>
       </element>
     </root>
   </artifact>

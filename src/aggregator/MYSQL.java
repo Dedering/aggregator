@@ -537,6 +537,142 @@ public class MYSQL {
 
 
 
+
+    // add new user feed url
+    public String insertNewFeedUrl(String feed_url){
+        String feeds = "";
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3307/sample", "root", "");
+
+            statement = connection.createStatement();
+
+            String insert = "insert into feed_url (feed_url) VALUES ('" + feed_url + "');";
+            statement.executeUpdate(insert);
+
+
+        } catch (ClassNotFoundException classNotFound) {
+            System.err.println("Cannot find database driver ");
+            classNotFound.printStackTrace();
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connection.ecting to database "
+                    + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+
+                if (statement != null) {
+                    statement.close();
+                }
+
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connection.ecting to database "
+                        + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+        return feeds;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    // add new user feed name
+    public String insertNewFeedName(String feed_name){
+        String feeds = "";
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3307/sample", "root", "");
+
+            statement = connection.createStatement();
+
+            String insert = "insert into feed (feed_name) VALUES ('" + feed_name + "');";
+            statement.executeUpdate(insert);
+
+
+        } catch (ClassNotFoundException classNotFound) {
+            System.err.println("Cannot find database driver ");
+            classNotFound.printStackTrace();
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connection.ecting to database "
+                    + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+
+                if (statement != null) {
+                    statement.close();
+                }
+
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connection.ecting to database "
+                        + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+        return feeds;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // update user feeds
     public String deleteUserFeeds(int user_id){
         String feeds = "";
@@ -615,6 +751,90 @@ public class MYSQL {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    // add new feed
+    public String addNewFeed(int user_id){
+        String feeds = "";
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3307/sample", "root", "");
+
+            statement = connection.createStatement();
+            // DELETE FROM user_feeds WHERE user_id = 2;
+
+            String delete = "DELETE FROM user_feeds WHERE user_id = " + user_id + ";";
+            statement.executeUpdate(delete);
+
+            //String insert = "insert into user_feeds (user_id,feed_id) VALUES(" + user_id + "," + feed_id + ");";
+            //statement.executeUpdate(insert);
+
+            //   String update = "Update user_feeds set feed_id = " + feed_id + " Where user_id = " + user_id + ";";
+            //   statement.executeUpdate(update);
+
+            // System.out.println("queryString: " + queryString);
+
+            // resultSet = statement.executeQuery(queryString);
+
+            // System.out.println();
+
+         /*   while (resultSet.next()) {
+                String feed_name = resultSet.getString("feed_name");
+
+                feeds += "<br />" + feed_name;
+
+            }
+*/
+        } catch (ClassNotFoundException classNotFound) {
+            System.err.println("Cannot find database driver ");
+            classNotFound.printStackTrace();
+        } catch (SQLException sqlException) {
+            System.err.println("Error in connection.ecting to database "
+                    + sqlException);
+            sqlException.printStackTrace();
+        } catch (Exception exception) {
+            System.err.println("General Error");
+            exception.printStackTrace();
+        } finally {
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+
+                if (statement != null) {
+                    statement.close();
+                }
+
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException sqlException) {
+                System.err.println("Error in connection.ecting to database "
+                        + sqlException);
+                sqlException.printStackTrace();
+            } catch (Exception exception) {
+                System.err.println("General Error");
+                exception.printStackTrace();
+            }
+        }
+        return feeds;
+
+    }
 
 
 

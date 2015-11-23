@@ -6,5 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.css">
 
 

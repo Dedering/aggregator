@@ -1,0 +1,2 @@
+I started working on the functionality to add a feed but didn't have enough time to complete it.  I'll 
+push that to git once it's complete.  I'm aiming to complete that task and integrate Hibernate this week.

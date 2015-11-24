@@ -1,0 +1,5 @@
+Last week, I moved my code from the JSPs to servlets and added bootstrap.  
+
+Over the holiday I’ll be adding log4J and hibernate.  I’m hoping to add testing this week as well, if time permits.  
+
+Most of functionality I’m adding is complete.  The only wish-for is an admin section that allows an admin to authorize a the feeds individual users add to be globally available. Currently any user added fields are globally available, I’d like to make it so user added fields are only available to them until authorized.

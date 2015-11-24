@@ -22,6 +22,6 @@
 
   <%@ include file="/alerts.jsp" %>
 
-  <a href="/feed.jsp">My&nbsp;Feed</a>
+  <a href="/feed">My&nbsp;Feed</a>
   </body>
 </html>

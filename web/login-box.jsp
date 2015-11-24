@@ -6,7 +6,7 @@
                     username
                 </td>
                 <td>
-                    <input type="text" name="j_username">
+                    <input type="text" name="j_username" autofocus>
                 </td>
             </tr>
             <tr>

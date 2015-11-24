@@ -55,3 +55,48 @@ nav table td:nth-child(2), nav table td:nth-child(3), nav table td:nth-child(4) 
 #cellthree {
     display: none !important;
 }
+
+
+
+
+
+
+nav ul {
+    width: 100%;
+    background-color: darkblue;
+}
+nav ul li {
+    text-align: center;
+    width: 20%;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-family: 'Francois One', sans-serif;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-family: 'Francois One', sans-serif;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: white !important;
+    color: darkblue !important;
+    -webkit-transition: background-color 250ms linear, color 250ms linear;
+    -moz-transition: background-color 250ms linear, color 250ms linear;
+    -o-transition: background-color 250ms linear, color 250ms linear;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+nav ul li:first-child {
+    padding: 15px;
+    width: 40%;
+}
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin: 0 !important;
+    }
+    nav ul li {
+        width: 100% !important;
+    }
+}

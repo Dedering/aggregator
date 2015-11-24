@@ -26,6 +26,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Display</web-resource-name>
+            <url-pattern>/feed</url-pattern>
             <url-pattern>/feed.jsp</url-pattern>
             <http-method>GET</http-method>
             <http-method>POST</http-method>
@@ -44,6 +45,8 @@
         <web-resource-collection>
             <web-resource-name>Edit Feed</web-resource-name>
             <url-pattern>/edit-feed.jsp</url-pattern>
+            <url-pattern>/edit-feed</url-pattern>
+
             <http-method>GET</http-method>
             <http-method>POST</http-method>
         </web-resource-collection>

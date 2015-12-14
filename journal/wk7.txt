@@ -1,0 +1,2 @@
+This week I completed my parser and Added JavaDoc. I also completed a total overall style of the sites login page, inncluding
+streamlining the redirects on logout and on the index page to improve user experience.

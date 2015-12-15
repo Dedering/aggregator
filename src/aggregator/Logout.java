@@ -1,9 +1,5 @@
 package aggregator;
 
-/**
- * Created by Private on 11/22/15.
- */
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -14,6 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * Logout Controller
+ *
+ * @author Dedering
+ */
 @WebServlet(
         name = "Log Out",
         urlPatterns = { "/logout" }
@@ -30,11 +31,17 @@ public class Logout extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        /* Get Servlet Context */
         ServletContext context = getServletContext();
+
+        /* Get Session */
         HttpSession session = request.getSession();
 
-
+        /* Get Dispatcher */
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/logout.jsp");
+
+        /* Forward Dispatcher */
         dispatcher.forward(request, response);
 
     }

@@ -1,25 +1,40 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Private
-  Date: 11/1/15
-  Time: 5:13 PM
-  To change this template use File | Settings | File Templates.
+
+  Feed
+  @author Dedering
+
 --%>
+
+<%-- UTF 8 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<%-- HTML 5 --%>
 <!DOCTYPE html>
 
 <html>
-<head>
-  <%@ include file="/file-que.jsp" %>
-  <title>My Feed</title>
-</head>
-<body>
-<%@ include file="/user-nav.jsp" %>
+  <head>
 
-${feedList}
-${feed}
+    <%-- Include Script Queue --%>
+    <%@ include file="/file-que.jsp" %>
 
+    <%-- Title --%>
+    <title>My Feed</title>
 
-</body>
+  </head>
+  <body>
+
+    <%-- Include User Nav --%>
+    <%@ include file="/user-nav.jsp" %>
+
+    <%-- Feed Column --%>
+    <div class="feed">
+
+      <%-- Feed Nav --%>
+      ${feedLinks}
+
+      <%-- Feed --%>
+      ${feed}
+    </div>
+
+  </body>
 </html>

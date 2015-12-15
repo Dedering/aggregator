@@ -1,21 +1,35 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Private
-  Date: 11/1/15
-  Time: 4:27 PM
-  To change this template use File | Settings | File Templates.
+
+  Failed Login
+  @author Dedering
+
 --%>
+
+<%-- UTF 8 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
-<head>
-  <%@ include file="/file-que.jsp" %>
+  <head>
 
-  <title></title>
-</head>
-<body>
-Login Failed
-<%@ include file="/login-box.jsp" %>
+    <%-- Include Script Queue --%>
+    <%@ include file="/file-que.jsp" %>
 
+    <%-- Title --%>
+    <title>News Aggregator - Login Failed</title>
 
-</body>
+  </head>
+  <body>
+
+    <%-- Animated Type --%>
+    <div class="alert">
+      <span id="typed-failed-login"><%-- Dynamic Content, please save element --%></span>
+    </div>
+
+    <%-- Include Login Box --%>
+    <%@ include file="/login-box.jsp" %>
+
+    <%-- Include Script Queue--%>
+    <%@ include file="/script-queue.jsp" %>
+
+  </body>
 </html>

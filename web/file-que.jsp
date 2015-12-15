@@ -1,11 +1,14 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Private
-  Date: 11/1/15
-  Time: 4:51 PM
-  To change this template use File | Settings | File Templates.
+
+  Script Queue
+  @author Dedering
+
 --%>
+
+<%-- Custom CSS --%>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<%-- Bootstrap CSS --%>
 <link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.css">
 
 

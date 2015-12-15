@@ -1,21 +1,39 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: Private
-  Date: 11/1/15
-  Time: 3:38 PM
-  To change this template use File | Settings | File Templates.
+
+  Login Page
+  @author Dedering
+
 --%>
 
+<%-- UTF 8 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%-- HTML 5 --%>
+<!DOCTYPE html>
 <html>
-<head>
-  <%@ include file="/file-que.jsp" %>
-  <title>News Aggregator</title>
+  <head>
 
-</head>
-<body>
-NEWS&nbsp;AGGREGATOR - login
-<%@ include file="/login-box.jsp" %>
+    <%-- Include Script Queue --%>
+    <%@ include file="/file-que.jsp" %>
 
-</body>
+    <%-- Title --%>
+    <title>News Aggregator</title>
+  </head>
+  <body>
+
+    <%-- Login Message --%>
+    <div class="alert">
+
+      <%-- Anmiated Type --%>
+      <span id="typed-headline"><%-- Dynamic Content, please save element --%></span>
+
+    </div>
+
+    <%-- Include Login Box --%>
+    <%@ include file="/login-box.jsp" %>
+
+    <%-- Include Script Queue --%>
+    <%@ include file="/script-queue.jsp" %>
+
+  </body>
 </html>

@@ -1,74 +1,100 @@
+<%--
+
+    Edit Feed
+    @author Dedering
+
+--%>
+
+<%-- Import Util --%>
 <%@ page import="java.util.*" %>
+
+<%-- Import Util MAp --%>
 <%@ page import = "java.util.Map" %>
 
+<%-- Import ArrayList --%>
 <%@ page import="java.util.List,java.util.ArrayList,java.util.Iterator"%>
-<%--
-  Created by IntelliJ IDEA.
-  User: Private
-  Date: 11/1/15
-  Time: 10:43 PM
-  To change this template use File | Settings | File Templates.
---%>
+
+<%-- UTF 8 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
-<head>
-  <%@ include file="/file-que.jsp" %>
+    <head>
 
-  <title></title>
-</head>
+        <%-- Include Script Queue --%>
+        <%@ include file="/file-que.jsp" %>
+
+        <%-- Title --%>
+        <title>News Aggregator - My Account</title>
+
+    </head>
 <body>
-<%@ include file="/user-nav.jsp" %>
 
-<div class="container">
-    <h1>Manage Your Feeds</h1>
-    <hr />
-    <div class="row">
+    <%-- Include Nav Bar --%>
+    <%@ include file="/user-nav.jsp" %>
 
+    <%-- Bootstrap Container --%>
+    <div class="container">
 
-        <form action="/edit-feed" method="get">
+        <%-- Headline --%>
+        <h1>Manage Your Feeds</h1>
 
+        <%-- Horizontal Rule --%>
+        <hr />
 
-            <div class="col-sm-6" id="cell-two">
-                <h2>Choose Feeds</h2>
-                <hr />
-                ${checkboxes}
-            </div>
+        <%-- Bootstrap Row --%>
+        <div class="row">
 
+            <%-- Form --%>
+            <form action="/edit-feed" method="get">
 
+                <%-- Bootstrap Column --%>
+                <div class="col-sm-6" id="cell-two">
 
-            <!--<a href="#" id="add-another">Add Another Feed</a>-->
+                    <%-- Headline --%>
+                    <h2>Choose Feeds</h2>
 
+                    <%-- Horizontal Rules --%>
+                    <hr />
 
+                    <%-- Checkboxes --%>
+                    ${checkboxes}
 
-            <div class="col-sm-6" id="cell-three">
+                </div>
 
-                <h2>Add Another Feed</h2>
-                <hr />
-                <label>Feed Name<br />
-                    <input type="text" name="addFeedName" placeholder="Feed Name" />
-                </label><br />
+                <%-- Bootstrap Column --%>
+                <div class="col-sm-6" id="cell-three">
 
-                <label>RSS Url<br />
-                    <input type="text" name="addFeedURL" placeholder="RSS Url"  />
-                </label>
-                <br />
-                <br />
+                    <%-- Headline --%>
+                    <h2>Add Another Feed</h2>
 
+                    <%-- Horizontal Rules --%>
+                    <hr />
 
-            </div>
+                    <%-- Feed Name --%>
+                    <label>
+                        Feed Name<br />
+                        <input type="text" name="addFeedName" placeholder="Feed Name" />
+                    </label><br />
 
-            <input type="hidden" name="feeds" value="0" />
+                    <%-- Feed URL --%>
+                    <label>RSS Url<br />
+                        <input type="text" name="addFeedURL" placeholder="RSS Url"  />
+                    </label>
+                    <br />
+                    <br />
+                </div>
 
-            <input type="submit" value="update" />
-        </form>
+                <%-- Hidden Input --%>
+                <input type="hidden" name="feeds" value="0" />
 
-
+                <%-- Submit Button --%>
+                <input type="submit" value="update" />
+            </form>
+        </div>
     </div>
-</div>
 
-
-<%@ include file="/script-queue.jsp" %>
-
+    <%-- Include Script Queue --%>
+    <%@ include file="/script-queue.jsp" %>
 
 </body>
 </html>

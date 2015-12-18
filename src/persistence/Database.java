@@ -1,4 +1,4 @@
-package aggregator;
+package persistence;
 
 import org.apache.log4j.Logger;
 

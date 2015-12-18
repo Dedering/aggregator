@@ -1,6 +1,9 @@
-package aggregator;
+package controllers;
 
 import org.apache.log4j.Logger;
+import persistence.Database;
+import persistence.FeedDoa;
+import persistence.USERDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;

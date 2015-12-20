@@ -1,4 +1,4 @@
-package controllers;
+package aggregator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;

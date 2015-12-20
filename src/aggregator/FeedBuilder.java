@@ -1,22 +1,8 @@
-package controllers;
+package aggregator;
 
-import models.Parse;
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
-import persistence.Database;
-import persistence.FeedDoa;
-import persistence.USERDAO;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.*;
@@ -24,91 +10,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Feed Controller
- *
- * @author Dedering
+ * Created by Private on 12/20/15.
  */
+public class FeedBuilder {
 
-@WebServlet(
-        name = "Feed",
-        urlPatterns = { "/feed" }
-)
-public class Feed extends HttpServlet {
-
-    /* Get Logger */
     private Logger logger = Logger.getLogger(this.getClass());
 
-    /* Set Default UserID */
-    private int userID = 0;
 
-    /* Set Default UserName*/
-    private String userName = "default";
-
-    /**
-     * Handles HTTP GET requests.
-     *
-     * @param  request                   the HttpServletRequest object
-     * @param  response                   the HttpServletResponse object
-     * @exception  ServletException  if there is a Servlet failure
-     * @exception  IOException       if there is an IO failure
-     */
-    public void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-        /* Logging Configuration */
-        BasicConfigurator.configure();
-
-        /* Get Servlet Context */
-        ServletContext context = getServletContext();
-
-        /* Get Session */
-        HttpSession session = request.getSession();
-
-        /* Get Username */
-        userName = request.getRemoteUser();
-
-        /* Connect to FeedDao */
-        FeedDoa feedDao = new FeedDoa();
-
-        /* Connect to UserDao */
-        USERDAO dao = new USERDAO();
-
-        /* Arraylist of Incoming <link> Element Values */
-        List<Parse> feeds = null;
-
-        /* Catch Exceptions */
-        try {
-
-            /* Get Database Connection */
-            Database.getInstance().connect();
-
-            /* Get User ID */
-            userID = dao.getUserID(userName);
-
-            /* Get User Feed */
-            feeds = feedDao.getFeeds(userID);
-
-            /* Set Bean - feedLinks */
-            session.setAttribute("feedLinks", feedLinks(feeds));
-
-            /* Set Bean - feed */
-            session.setAttribute("feed", parseFeed(feeds));
-
-        } catch (Exception e) {
-
-            /* Print Stack Trace */
-            e.printStackTrace();
-
-            /* Log Exception */
-            logger.error("Exception in Feed.java doGet");
-        }
-
-        /* Get Dispatcher */
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/feed.jsp");
-
-        /* Forward Dispatcher */
-        dispatcher.forward(request, response);
-    }
 
     /**
      *
@@ -168,6 +76,9 @@ public class Feed extends HttpServlet {
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(url.openStream()));
 
+            /* Arraylist of Incoming <decription> Element Values */
+            ArrayList<String> descriptions = new ArrayList<>();
+
             /* Arraylist of Incoming <link> Element Values */
             ArrayList<String> links = new ArrayList<>();
 
@@ -186,6 +97,9 @@ public class Feed extends HttpServlet {
                 /* Pattern - Input Contains Hyperlink */
                 Pattern ahrefPattern = Pattern.compile("<a class=\"url entry-title\".*?href=\"(.*?)\".*?>(.*?)</a>");
 
+                /* Pattern - Input Contains Description */
+                Pattern descriptionPattern = Pattern.compile("<description.*?>(.*?)(&lt;br clear=\'all\'|</description>)");
+
                 /* Pattern - Input Contains <link> */
                 Pattern linkPattern = Pattern.compile("<link.*?>(.*?)</link>");
 
@@ -195,11 +109,21 @@ public class Feed extends HttpServlet {
                 /* Matcher - Input Contains Hyperlink */
                 Matcher ahrefMatch = ahrefPattern.matcher(inputLine);
 
+                /* Matcher - Input Contains Description */
+                Matcher descriptionMatch = descriptionPattern.matcher(inputLine);
+
                 /* Matcher - Input Contains <link> */
                 Matcher linkMatch = linkPattern.matcher(inputLine);
 
                 /* Matcher - Input Contains <title> */
                 Matcher titleMatch = titlePattern.matcher(inputLine);
+
+
+                /* Input Matched <description> */
+                while(descriptionMatch.find()) {
+
+                    descriptions.add(descriptionMatch.group(1));
+                }
 
 
                 /* Input Matched Hyperlink - Used For NYT */
@@ -233,27 +157,43 @@ public class Feed extends HttpServlet {
             /* Iterate Through Array of Links */
             for (int x = 0;x < links.size(); x++) {
 
+                // Dont add like this, create object and use that intead of titles.get
+
                 /* Add <link> & <title> elements to Hashmap */
                 matches.put(links.get(x), titles.get(x));
+
             }
+            for (int y = 0;y < descriptions.size(); y++) {
+                feed += "<br />" + descriptions.get(y);
+                logger.info(descriptions.get(y));
+
+            }
+
+
+
+
+
+
+
+
 
             /* Create Iterator */
             Iterator it = matches.entrySet().iterator();
 
             /* Iterate through Hashmap of Links(K) and Titles(V) */
-                while (it.hasNext()) {
+            while (it.hasNext()) {
 
                     /* Advance Iterator */
-                    Map.Entry pair = (Map.Entry)it.next();
+                Map.Entry pair = (Map.Entry)it.next();
 
                     /* Add K,V to Feed Return */
-                    feed += "<p><a href=\"" + pair.getKey() + "\"  target=\"_blank\">" + pair.getValue() + "</a></p>";
+                feed += "<p><a href=\"" + pair.getKey() + "\"  target=\"_blank\">" + pair.getValue() + "</a></p>";
 
                     /* Log Feed Output */
-                    logger.info("User: " + userName + " | Feed: " + name + " - " + pair.getValue());
+                logger.info("Feed: " + name + " - " + pair.getValue());
 
                     /* Remove Current Iterator Position */
-                    it.remove();
+                it.remove();
             }
         }
 

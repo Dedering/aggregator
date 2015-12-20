@@ -1,4 +1,4 @@
-package models;
+package aggregator;
 
 /**
  * Feed Model
@@ -7,13 +7,13 @@ package models;
  */
 public class Parse {
 
-    /* int Containging Feed ID */
+    /* int Containing Feed ID */
     private int feedID;
 
-    /* String Containging Feed Name */
+    /* String Containing Feed Name */
     private String feedName;
 
-    /* String Containging Feed URL */
+    /* String Containing Feed URL */
     private String feedURL;
 
     /**

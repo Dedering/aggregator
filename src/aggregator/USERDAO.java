@@ -1,6 +1,4 @@
-package persistence;
-
-import models.USER;
+package aggregator;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

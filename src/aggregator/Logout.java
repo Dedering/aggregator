@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Logout Controller
+ * Logout Servlet
  *
  * @author Dedering
  */

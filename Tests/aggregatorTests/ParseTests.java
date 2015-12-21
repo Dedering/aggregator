@@ -1,18 +1,14 @@
-//package aggregatorTests;
-
-/**
- * Created by Private on 12/20/15.
- */
-//public class ParseTests {
-//}
-
+package aggregatorTests;
 
 import aggregator.Parse;
-import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
 
+/**
+ *  Tests for the Feed Model
+ */
 public class ParseTests {
 
     /* int Containing Feed ID */
@@ -28,7 +24,7 @@ public class ParseTests {
     Parse parse = new Parse();
 
 
-    /*
+    /**
     *   Set initial values for testing
     *
      */
@@ -43,7 +39,7 @@ public class ParseTests {
         parse.setFeedURL(feedURL);
     }
 
-    /*
+    /**
     *   Test the Getter for Feed ID
     *
      */
@@ -55,7 +51,7 @@ public class ParseTests {
         assertTrue(testMessage, returnedValue == 1);
     }
 
-    /*
+    /**
     *   Test the Setter for Feed ID
     *
      */
@@ -68,7 +64,7 @@ public class ParseTests {
         assertTrue(testMessage, returnedValue == 3);
     }
 
-    /*
+    /**
     *   Test the Getter for Feed Name
     *
      */
@@ -80,7 +76,7 @@ public class ParseTests {
         assertTrue(testMessage, returnedValue == "Test Feed");
     }
 
-    /*
+    /**
     *   Test the Setter for Feed Name
     *
      */
@@ -94,7 +90,7 @@ public class ParseTests {
         assertTrue(testMessage, returnedValue == "New Test Feed");
     }
 
-    /*
+    /**
     *   Test the Getter for Feed URL
     *
      */
@@ -121,7 +117,7 @@ public class ParseTests {
         assertTrue(testMessage, returnedValue == "http://newtest.com");
     }
 
-    /*
+    /**
     *   Test the Parse Constructor
     *
      */

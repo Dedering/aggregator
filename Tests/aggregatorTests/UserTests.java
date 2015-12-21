@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-
-
-
+/**
+ *  Tests for the User Model
+ */
 public class UserTests {
     /* int Containing User ID */
     private int userID;

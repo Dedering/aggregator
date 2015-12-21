@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Feed Controller
+ * Feed Servlet
  *
  * @author Dedering
  */
@@ -45,7 +45,6 @@ public class Feed extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-
         /* Get Servlet Context */
         ServletContext context = getServletContext();
 
@@ -61,28 +60,25 @@ public class Feed extends HttpServlet {
         /* Connect to UserDao */
         USERDAO dao = new USERDAO();
 
-        FeedBuilder feed = new FeedBuilder();
+        /* Initialize Feed Builder */
+        FeedBuilder feed = null;
 
         /* Arraylist of Incoming <link> Element Values */
         List<Parse> feeds = null;
 
         /* Catch Exceptions */
         try {
-
             /* Get Database Connection */
             Database.getInstance().connect();
 
-            /* Get User ID */
-            userID = dao.getUserID(userName);
-
-            /* Get User Feed */
-            feeds = feedDao.getFeeds(userID);
+            /* Get Feed  */
+            feed = new FeedBuilder(dao.getUserID(userName));
 
             /* Set Bean - feedLinks */
-            session.setAttribute("feedLinks", feed.feedLinks(feeds));
+            session.setAttribute("feedLinks", feed.feedLinks());
 
             /* Set Bean - feed */
-            session.setAttribute("feed", feed.parseFeed(feeds));
+            session.setAttribute("feed", feed.parseFeed());
 
         } catch (Exception e) {
 
@@ -99,6 +95,4 @@ public class Feed extends HttpServlet {
         /* Forward Dispatcher */
         dispatcher.forward(request, response);
     }
-
-
 }

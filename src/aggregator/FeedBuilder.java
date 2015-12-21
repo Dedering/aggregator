@@ -1,33 +1,86 @@
 package aggregator;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Private on 12/20/15.
+ * Feed Builder - Constructs the checkboxes for the My Account Page
+ *
+ * @author Dedering
  */
 public class FeedBuilder {
 
-    private Logger logger = Logger.getLogger(this.getClass());
+    /* Initialize Logger */
+    private Logger logger;
 
+    /* Initialize default user ID */
+    private int userID = 0;
 
+    /* Initialize feeds list */
+    private List<Parse> feeds = null;
+
+    /* Create Instance of FeedDoa */
+    FeedDoa feedDao;
 
     /**
+     * Empty Constructor
      *
-     * Iterate Through List of Feeds, Return Feed Nav
+     */
+    public FeedBuilder() {
+
+        /* Get Logger */
+        logger = Logger.getLogger(this.getClass());
+    }
+
+    /**
+     * Constructor
+     * @param userID
      *
-     * @param feeds
+     */
+    public FeedBuilder(int userID) throws SQLException {
+
+        /* Set userID */
+        this.userID = userID;
+
+        /* Instantiate FeedDao */
+        this.feedDao = new FeedDoa();
+
+        /* Configure Logger */
+        BasicConfigurator.configure();
+
+        /* Instantiate Logger */
+        logger = Logger.getLogger(this.getClass());
+
+        /* Catch exceptions */
+        try {
+
+            /* Get Feeds from FeedDao */
+            feeds = feedDao.getFeeds(userID);
+
+        } catch (SQLException e) {
+
+            /* Print Stack Trace */
+            e.printStackTrace();
+        }
+
+    }
+    /**
+     *
+     * Iterate Through the List of Feeds, Return the Feed Nav
+     *
      * @return
      * @throws Exception
      */
 
-    public String feedLinks(List<Parse> feeds) throws Exception {
+    public String feedLinks() throws Exception {
 
         /* Open List */
         String feedNav = "<ul class='feed-nav'>";
@@ -47,18 +100,17 @@ public class FeedBuilder {
 
         /* Return Feed Nav */
         return feedNav;
+
     }
 
     /**
      *
      * Iterate Through List of Feeds, Return HTML Output
      *
-     * @param feeds
      * @return
      * @throws Exception
      */
-
-    public String parseFeed(List<Parse> feeds) throws Exception {
+    public String parseFeed() throws Exception {
 
         /* String Containing Return Feed */
         String feed = "";
@@ -97,9 +149,6 @@ public class FeedBuilder {
                 /* Pattern - Input Contains Hyperlink */
                 Pattern ahrefPattern = Pattern.compile("<a class=\"url entry-title\".*?href=\"(.*?)\".*?>(.*?)</a>");
 
-                /* Pattern - Input Contains Description */
-                Pattern descriptionPattern = Pattern.compile("<description.*?>(.*?)(&lt;br clear=\'all\'|</description>)");
-
                 /* Pattern - Input Contains <link> */
                 Pattern linkPattern = Pattern.compile("<link.*?>(.*?)</link>");
 
@@ -109,22 +158,11 @@ public class FeedBuilder {
                 /* Matcher - Input Contains Hyperlink */
                 Matcher ahrefMatch = ahrefPattern.matcher(inputLine);
 
-                /* Matcher - Input Contains Description */
-                Matcher descriptionMatch = descriptionPattern.matcher(inputLine);
-
                 /* Matcher - Input Contains <link> */
                 Matcher linkMatch = linkPattern.matcher(inputLine);
 
                 /* Matcher - Input Contains <title> */
                 Matcher titleMatch = titlePattern.matcher(inputLine);
-
-
-                /* Input Matched <description> */
-                while(descriptionMatch.find()) {
-
-                    descriptions.add(descriptionMatch.group(1));
-                }
-
 
                 /* Input Matched Hyperlink - Used For NYT */
                 while(ahrefMatch.find()) {
@@ -157,25 +195,9 @@ public class FeedBuilder {
             /* Iterate Through Array of Links */
             for (int x = 0;x < links.size(); x++) {
 
-                // Dont add like this, create object and use that intead of titles.get
-
                 /* Add <link> & <title> elements to Hashmap */
                 matches.put(links.get(x), titles.get(x));
-
             }
-            for (int y = 0;y < descriptions.size(); y++) {
-                feed += "<br />" + descriptions.get(y);
-                logger.info(descriptions.get(y));
-
-            }
-
-
-
-
-
-
-
-
 
             /* Create Iterator */
             Iterator it = matches.entrySet().iterator();
@@ -183,16 +205,16 @@ public class FeedBuilder {
             /* Iterate through Hashmap of Links(K) and Titles(V) */
             while (it.hasNext()) {
 
-                    /* Advance Iterator */
+                /* Advance Iterator */
                 Map.Entry pair = (Map.Entry)it.next();
 
-                    /* Add K,V to Feed Return */
+                /* Add K,V to Feed Return */
                 feed += "<p><a href=\"" + pair.getKey() + "\"  target=\"_blank\">" + pair.getValue() + "</a></p>";
 
-                    /* Log Feed Output */
+                /* Log Feed Output */
                 logger.info("Feed: " + name + " - " + pair.getValue());
 
-                    /* Remove Current Iterator Position */
+                /* Remove Current Iterator Position */
                 it.remove();
             }
         }

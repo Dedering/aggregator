@@ -7,60 +7,97 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-//import org.hibernate.metamodel.relational.Database;
-
 /**
- * Created by Private on 12/5/15.
+ * USERDAO - Handle User Related SQL operations
+ *
+ * @author Dedering
  */
 public class USERDAO {
 
+    /**
+     * Return User Object
+     * @param remoteUser
+     * @return
+     * @throws SQLException
+     */
+    public List<USER> getUser(String remoteUser) throws SQLException {
 
+        /* Arraylist of User Objects */
+        List<USER> users = new ArrayList<USER>();
 
-        public List<USER> getUser(String remoteUser) throws SQLException {
+        /* Get Connection */
+        Connection connection = Database.getInstance().getConnection();
 
-            List<USER> users = new ArrayList<USER>();
+        /* Query String */
+        String sql = "select * from users where user_name = '" + remoteUser + "'";
 
-            Connection connection = Database.getInstance().getConnection();
+        /* Create Connection Statement */
+        Statement selectStatement = connection.createStatement();
 
-            String sql = "select * from users where user_name = '" + remoteUser + "'";
-            Statement selectStatement = connection.createStatement();
+        /* Execute Query */
+        ResultSet results = selectStatement.executeQuery(sql);
 
-            ResultSet results = selectStatement.executeQuery(sql);
+        /* Iterate Through Results */
+        while (results.next()) {
 
-            while (results.next()) {
-                int userID = results.getInt("user_id");
-                String userName = results.getString("user_name");
+            /* User ID */
+            int userID = results.getInt("user_id");
 
-                USER user = new USER(userID, userName);
-                users.add(user);
-            }
+            /* User Name */
+            String userName = results.getString("user_name");
 
-            results.close();
-            selectStatement.close();
+            /* Create User Object of Result */
+            USER user = new USER(userID, userName);
 
-            return users;
+            /* Add User Object to Arraylist of User Objects */
+            users.add(user);
         }
 
+        /* Close Results */
+        results.close();
 
+        /* Close Statement */
+        selectStatement.close();
 
-        public String getUSER(String remoteUser) throws SQLException {
-            List<USER> users = getUser(remoteUser);
-            String user = String.valueOf(users.get(0));
-            return user;
-        }
+        /* Return ArrayList of User Objects */
+        return users;
+    }
 
-    public int getUserID(String remoteUser) throws SQLException {
+    /**
+     * Get the Current Users from User List
+     *
+     * @param remoteUser
+     * @return
+     * @throws SQLException
+     */
+    public String getUSER(String remoteUser) throws SQLException {
+
+        /* Get List of Users */
         List<USER> users = getUser(remoteUser);
-        int user = users.get(0).getUserID();
+
+        /* Get the value of the first result */
+        String user = String.valueOf(users.get(0));
+
+        /* Return the result */
         return user;
     }
 
+    /**
+     * Get the Current User's User ID
+     *
+     * @param remoteUser
+     * @return
+     * @throws SQLException
+     */
+    public int getUserID(String remoteUser) throws SQLException {
 
-    public String getUserName() {
-        return "success";
+        /* Get List of Users */
+        List<USER> users = getUser(remoteUser);
+
+        /* Get the userId of the first result */
+        int user = users.get(0).getUserID();
+
+        /* Return the userName */
+        return user;
     }
-
-
-
-
 }

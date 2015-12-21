@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Feed Dao
+ * Feed Dao - Handle Feed Related SQL operations
  *
  * @author Dedering
  */
@@ -17,7 +17,7 @@ public class FeedDoa {
     /**
      * Return User's Edit Feed Checkboxes
      *
-     * @param
+     * @param user_id
      * @return
      */
     public String returnFeedCheckboxes(int user_id) throws SQLException {
